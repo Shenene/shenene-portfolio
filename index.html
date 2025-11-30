@@ -4,7 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link href="sytle.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <!-- M A I N   N A V I G A T I O N -->
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="index.html#about">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="prof-dev-certs.html">Prof. Dev / Certs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- M A I N   C O N T E N T -->
+    <main>
+      <!-- HERO / INTRO SECTION -->
+      <section class="hero">
+        <h1>Shenene Carstens</h1>
+        <h2>UX & UI Designer | Product Developer</h2>
+        <p>Turning complex workflows into simple, branded user experiences.</p>
+        <p>I design and build user-centerd digital products that combine clarity, functionality, and polished branding. This portfolio highlights my projects across UX, UI, and software development.</p>
+
+        <!-- HERO / LEFT PANEL -->
+        <div class="hero-left">
+          <a href="#projects" class="btn">All Projects</a>
+          <a href="#resume" class="btn" target="_blank">View Resume</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <!-- HERO / RIGHT PANEL -->
+        <aside class="hero-featured">
+          <h2>Featured</h2>
+          <article>
+            <h3>AutoFill Resume Pro</h3>
+            <p>A Windows desktop app that simplifies resume creation with customization, automation, and branded instraller design</p>
+            <a href="#case study" class="btn">View Case Study</a>
+          </article>
+        </aside>
+      </section>
+
+      <div class="divider-taper"></div>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>ABOUT ME</h2>
+        <img src="images/profile-photo.jpg" alt="Profile Photo of Shenene Carstens" />
+        <p>I'm a designer who cares about clarity, consistency, and the small details taht make products feel dependable. I'm still early in my UX journey and continue to build skills in research, prototyping, and front-end (HTML/CSS/JS), but I bring years of process, documentation, and stakeholder experience from construction and architecture.</p>
+
+        <p>That previous work made "user needs + constraints + quality" second nature — writing SOPs, creating checklists, testing processes, and closing feedback loops. I apply the same habits in product work: define the problem, map the flow, test with people, document decisions, and iterate.</p>
+
+        <p>Currently, I'm studing towards Mission Ready's Technical, AI-powered UX Diploma (L5 - L6), having completed the Front-End Design & Development certificate (L4). I'm comfortable in Figma and the usual design/dev, and I'm steadily improving my coding fundamentals.</p>
+
+        <p>I value teams that share early and often, use evidence to make decisions, and care about the quality of both the outcome and the process.</p>
+      </section>
+
+      <hr class="divider" />
+    </main>
+
+    <!-- F O O T E R -->
+    <footer>
+      <nav aria-label="Footer social links">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <img src="icons/github.svg" alt="GitHub profile" aria-label="GitHub profile" />
+        </a>
+
+        <a href="#" target="_blank" rel="noreferrer noopener">
+          <img src="icons/youtube.svg" alt="Youtube" aria-label="Youtube" />
+        </a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <img src="icons/linkedin.svg" alt="LinkedIn" aria-label="LinkedIn" />
+        </a>
+      </nav>
+
+      <p>&copy; 2025 Shenene Carstens - All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
