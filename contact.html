@@ -4,60 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link href="sytle.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <!-- M A I N   N A V I G A T I O N -->
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="prof-dev-certs.html">Prof. Dev / Certs</a>
-        <a href="contact.html" aria-current="page">Contact</a>
-      </nav>
-    </header>
+    <div class="page">
+      <header>
+        <!-- M A I N   N A V I G A T I O N -->
+        <nav class="topnav">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="prof-dev-certs.html">Prof. Dev / Certs</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </header>
 
-    <!-- M A I N   C O N T E N T -->
-    <main>
-      <section id="contact">
-        <h2>CONTACT</h2>
-        <p>For collaboration, feedback, or professional opportunities, please use the form below.</p>
-        <form>
-          <fieldset>
-            <legend class="visually-hidden">Your Details</legend>
-            <label for="name">NAME</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
+      <!-- M A I N   C O N T E N T -->
+      <main>
+        <section id="contact">
+          <h2>CONTACT</h2>
+          <p>For collaboration, feedback, or professional opportunities, please use the form below.</p>
+          <form>
+            <fieldset>
+              <legend class="visually-hidden">Your Details</legend>
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
 
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" placeholder="youremail@emailcom" required />
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="youremail@emailcom" required />
 
-            <label for="message">MESSAGE</label>
-            <textarea id="message" name="message" placeholder="Type your message here..." rows="6" required></textarea>
-          </fieldset>
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-    </main>
-    <!-- F O O T E R -->
-    <footer>
-      <nav aria-label="Footer social links">
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="icons/github.svg" alt="GitHub profile" aria-label="GitHub profile" />
-        </a>
+              <label for="message">MESSAGE</label>
+              <textarea id="message" name="message" placeholder="Type your message here..." rows="6" required></textarea>
+            </fieldset>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+      <!-- F O O T E R -->
+      <footer>
+        <nav aria-label="Footer social links">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="icons/github.svg" alt="GitHub profile" aria-label="GitHub profile" />
+          </a>
 
-        <a href="#" target="_blank" rel="noreferrer noopener">
-          <img src="icons/youtube.svg" alt="Youtube" aria-label="Youtube" />
-        </a>
+          <a href="#" target="_blank" rel="noreferrer noopener">
+            <img src="icons/youtube.svg" alt="Youtube" aria-label="Youtube" />
+          </a>
 
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="icons/linkedin.svg" alt="LinkedIn" aria-label="LinkedIn" />
-        </a>
-      </nav>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="icons/linkedin.svg" alt="LinkedIn" aria-label="LinkedIn" />
+          </a>
+        </nav>
 
-      <p>&copy; 2025 Shenene Carstens - All Rights Reserved.</p>
-    </footer>
+        <p>&copy; 2025 Shenene Carstens - All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
