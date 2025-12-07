@@ -331,6 +331,10 @@ h3 {
   padding-inline: 3.2rem;
 }
 
+.footer-copy {
+  color: #7a7a7a;
+}
+
 .social-links nav {
   display: flex;
   align-items: center;
