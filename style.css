@@ -299,6 +299,7 @@ h3 {
 
 .about-layout h2 {
   margin-left: 30px;
+  color: #1a2e4f;
 }
 
 #about {
@@ -368,8 +369,9 @@ h3 {
 
 /* P R O J E C T S   S C R E E N */
 
-#project-resume h2 {
+.project-section h2 {
   margin-block: 50px;
+  color: #1a2e4f;
 }
 
 .project-card {
@@ -451,3 +453,70 @@ h3 {
   /* box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08); */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
 }
+
+/* P R O J E C T - R E S U M E */
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 3.2rem;
+  padding-block: 10px;
+  max-width: 550px;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #474647;
+}
+
+.breadcrumb a + a::before,
+.breadcrumb a + span::before {
+  content: ">";
+  margin-inline: 8px;
+  color: #a6a6a6;
+  opacity: 0.6;
+}
+
+.breadcrumb a:hover {
+  border-bottom: none;
+}
+
+/* Reserves space before hover */
+.breadcrumb .crumb-text {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.breadcrumb a:hover .crumb-text {
+  border-bottom: 1px solid;
+  color: #b39348;
+}
+
+.case-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.case-icons li img {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+/* .project-section h3 {
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  margin-block: 50px;
+} */
