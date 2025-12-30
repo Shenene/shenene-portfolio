@@ -17,6 +17,7 @@ body {
   color: #474647;
   line-height: 1.6;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .page {
@@ -71,6 +72,11 @@ nav a[aria-current="page"] {
   background-color: #b39348;
   margin: 4rem 0;
   opacity: 0.85;
+}
+
+.section-divider.thin {
+  height: 1px;
+  opacity: 0.4;
 }
 
 .project-section h2 {
@@ -363,7 +369,18 @@ h3 {
     align-items: flex-start;
     gap: 3rem;
   }
-} */
+} 
+
+  @media (max-width: 900px) {
+  .pattern-img {
+  display: none;
+}
+
+  .case-icons-container {
+  padding-right: 0;
+  }
+}  
+*/
 
 /* _________________________________________ */
 
@@ -453,7 +470,7 @@ h3 {
 
 /* P R O J E C T - R E S U M E */
 
-/* Breadcrumb */
+/* Breadcrumbs */
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -467,6 +484,7 @@ h3 {
   display: flex;
   align-items: center;
   font-size: 14px;
+  font-weight: 500;
   color: #474647;
 }
 
@@ -474,8 +492,9 @@ h3 {
 .breadcrumb a + span::before {
   content: ">";
   margin-inline: 8px;
-  color: #a6a6a6;
-  opacity: 0.6;
+  color: #8a8a8a;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .breadcrumb a:hover {
@@ -493,34 +512,102 @@ h3 {
   color: #b39348;
 }
 
-/* Icon images */
-.case-icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  list-style: none;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-block: 1.5rem;
-}
-
-.case-icons li img {
-  display: flex;
-  justify-content: flex-start;
-  width: 80px;
-  height: 80px;
-}
-
+/* Problem > Process > Solution > Outcome */
 .case-flow {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  font-size: 18px;
+  margin-bottom: 20px;
   font-weight: 500;
-  color: #6f6f6f;
+}
+
+.flow-arrow {
+  padding-inline: 8px;
+  color: #8f8f8f;
+}
+
+/* h3 - Case Study 1: AutoFill Resume Pro */
+.icon-with_subheading {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 1.5rem;
 }
 
 .subheading-h3 {
   display: flex;
   justify-content: flex-start;
+  font-weight: 900;
+}
+
+/* Icon images - circles */
+.case-icons-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 120px;
+}
+
+.case-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1.5rem 0;
+}
+
+/* Individual icon images - circles */
+.case-icons li img {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+/* Pattern */
+.pattern-img {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  width: 120px;
+  height: auto;
+  opacity: 0.65;
+}
+
+/* Case Study Structure (Overview) */
+.subheading_2 {
+  margin-block: 20px;
+  font-weight: 700;
+  color: #8c8c8c;
+  letter-spacing: 0.1rem;
+}
+
+.ol-list,
+.ul-list li {
+  padding-left: 4px;
+  margin-left: 24px;
+  max-width: 80ch;
+}
+
+.paragraph-project {
+  max-width: 80ch;
+}
+
+.minor-subheading {
+  margin: 20px 0 10px 0;
+}
+
+.text-img-container {
+  display: flex;
+}
+
+#market-research {
+  margin-right: 50px;
+}
+
+#empathy-map {
+  width: 400px;
+  height: auto;
 }
