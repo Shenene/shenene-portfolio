@@ -530,7 +530,7 @@ h3 {
 .icon-with_subheading {
   display: flex;
   gap: 12px;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .subheading-h3 {
@@ -545,6 +545,8 @@ h3 {
   display: flex;
   align-items: center;
   padding-right: 120px;
+  margin-top: 10px;
+  height: 90px;
 }
 
 .case-icons {
@@ -576,14 +578,6 @@ h3 {
   opacity: 0.65;
 }
 
-/* Case Study Structure (Overview) */
-.subheading_2 {
-  margin-block: 20px;
-  font-weight: 700;
-  color: #8c8c8c;
-  letter-spacing: 0.1rem;
-}
-
 .ol-list,
 .ul-list li {
   padding-left: 4px;
@@ -595,8 +589,11 @@ h3 {
   max-width: 80ch;
 }
 
+/* h4 subheading */
 .minor-subheading {
-  margin: 20px 0 10px 0;
+  margin: 30px 0 10px 0;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
 }
 
 .text-img-container {
@@ -610,4 +607,30 @@ h3 {
 #empathy-map {
   width: 400px;
   height: auto;
+}
+
+.block-img {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+#process-infographic {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  width: 500px;
+  height: auto;
+  margin-top: 24px;
+}
+
+#resume-main-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 24px;
 }
