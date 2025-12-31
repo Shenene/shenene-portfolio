@@ -618,6 +618,10 @@ h3 {
 }
 
 /* Gallery */
+.images-section {
+  margin-bottom: 80px;
+}
+
 #process-infographic {
   display: flex;
   justify-content: flex-start;
