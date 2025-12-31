@@ -588,6 +588,23 @@ h3 {
   opacity: 0.65;
 }
 
+.project-hero {
+  margin: 18px 0 22px;
+  padding: 18px;
+  background: #f9f6f1;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.project-hero img {
+  max-height: 460px;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 0;
+}
+
 .ol-list,
 .ul-list li {
   padding-left: 4px;
