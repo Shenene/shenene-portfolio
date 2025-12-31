@@ -539,6 +539,12 @@ h3 {
   font-weight: 900;
 }
 
+#subheading-h3 {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
 /* Icon images - circles */
 .case-icons-container {
   position: relative;
@@ -596,11 +602,18 @@ h3 {
   font-weight: 700;
 }
 
+#minor-subheading {
+  margin: 0 0 10px 0;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
 .text-img-container {
   display: flex;
 }
 
-#market-research {
+/* #market-research { */
+.image-wrapper {
   margin-right: 50px;
 }
 
@@ -807,4 +820,29 @@ h3 {
     margin-top: 4vh;
     height: 88vh;
   }
+}
+
+#chart {
+  width: 400px;
+  height: 390px;
+  margin-top: 80px;
+}
+
+.nav-wrap {
+  display: flex;
+  gap: 2px;
+}
+
+#microcopy {
+  display: flex;
+  align-self: center;
+  padding-bottom: 5px;
+  padding-inline: 5px;
+  font-size: 0.875rem;
+  color: #a6a6a6;
+  gap: 6px;
+}
+
+.arrow {
+  color: #b39348;
 }
