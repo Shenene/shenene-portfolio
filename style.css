@@ -539,6 +539,10 @@ h3 {
   font-weight: 900;
 }
 
+.subheading-h3.video {
+  padding-bottom: 16px;
+}
+
 #subheading-h3 {
   display: flex;
   justify-content: flex-start;
@@ -593,6 +597,10 @@ h3 {
 
 .paragraph-project {
   max-width: 80ch;
+}
+
+.paragraph-project.video {
+  padding-bottom: 1rem;
 }
 
 /* h4 subheading */
