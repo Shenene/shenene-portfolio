@@ -974,7 +974,6 @@ h3 {
 }
 
 .cert-carousel_track::-webkit-scrollbar {
-  height: 0;
   display: none; /* Chrome */
 }
 
