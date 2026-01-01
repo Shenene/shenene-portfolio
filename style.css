@@ -18,6 +18,11 @@ body {
   line-height: 1.6;
   font-size: 1rem;
   font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 70px;
 }
 
 .page {
@@ -567,6 +572,16 @@ h3 {
   list-style: none;
   margin: 0;
   padding: 0 0 1.5rem 0;
+}
+
+.case-icons a {
+  display: inline-flex;
+  border-radius: 50%;
+}
+
+.case-icons a:focus-visible {
+  outline: 2px solid #b39348;
+  outline-offset: 4px;
 }
 
 /* Individual icon images - circles */

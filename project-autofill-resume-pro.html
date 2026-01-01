@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
   </head>
 
-  <body>
+  <body id="top">
             <!-- M A I N   N A V I G A T I O N -->
       <header class="site-header">
         <nav class="topnav">
@@ -32,45 +32,109 @@
         </nav>
 
       <!-- M A I N   C O N T E N T -->
+
+      <!-- AutoFill Resume Pro -->
       
         <section id="project-resume" class="project-section">
           <h2>AutoFill Resume Pro</h2>
+
+      <!-- Process -->
           
           <p class="case-flow">
             Problem <span class="flow-arrow">→</span>
             Process <span class="flow-arrow">→</span>
             Solution<span class="flow-arrow">→</span>
-            Outcome</p>          
+            Outcome</p>     
+            
+      <!-- Case Study 1: AutoFill Resume Pro -->
             
         <div class="icon-with_subheading">
           <img src="icons/folder-icon.svg" alt="folder icon" />
           <h3 class="subheading-h3">Case Study 1: AutoFill Resume Pro</h3>
         </div>
 
-        <div class="case-icons-container">
+      <!-- Icon Navigation -->
+
+        <nav class="case-icons-container" aria-label="Case study sections">
           <ul class="case-icons">
-            <li><img src="case-icons/document-icon.svg" alt="" /></li>
-            <li><img src="case-icons/warning-icon.svg" alt="" /></li>
-            <li><img src="case-icons/search-icon.svg" alt="" /></li>
-            <li><img src="case-icons/goal-icon.svg" alt="" /></li>
-            <li><img src="case-icons/tools-icon.svg" alt="" /></li>
-            <li><img src="case-icons/process-icon.svg" alt="" /></li>
-            <li><img src="case-icons/challenges-icon.svg" alt="" /></li>
-            <li><img src="case-icons/planning-icon.svg" alt="" /></li>
-            <li><img src="case-icons/images-icon.svg" alt="" /></li>
-            <li><img src="case-icons/outcome-icon.svg" alt="" /></li>
-            <li><img src="case-icons/reflection-icon.svg" alt="" /></li>
+            <li>
+              <a href="#overview" title="Project overview">
+                <img src="case-icons/document-icon.svg" alt="Project Overview" />
+            </a>
+          </li>
+
+            <li>
+              <a href="#problem" title="The Problem">
+                <img src="case-icons/warning-icon.svg" alt="Problem" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#research" title="Market Research">
+                <img src="case-icons/search-icon.svg" alt="Market Research" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#goal" title="Goal">
+                <img src="case-icons/goal-icon.svg" alt="Project Goal" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#tools" title="Tools & Technologies">
+                <img src="case-icons/tools-icon.svg" alt="Tools & technologies" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#process" title="Process">
+                <img src="case-icons/process-icon.svg" alt="Process" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#challenges" title="Challenges & learnings">
+                <img src="case-icons/challenges-icon.svg" alt="Challenges" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#planning" title="Planning / User flows">
+                <img src="case-icons/planning-icon.svg" alt="Planning" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#visuals" title="Visuals and Screenshots">
+                <img src="case-icons/images-icon.svg" alt="Visuals and screenshots" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#outcome" title="Outcome">
+                <img src="case-icons/outcome-icon.svg" alt="Outcome" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#reflection" title="Impact and reflection">
+                <img src="case-icons/reflection-icon.svg" alt="Impact and reflection" />
+              </a>
+            </li>
           </ul>
 
-          <img src="images/image-patterns.png" alt="pattern image" class="pattern-img" />
-        </div> 
+          <img src="images/image-patterns.png" alt="" class="pattern-img" aria-hidden="true" />
+        </nav> 
         </section>
 
+      <!-- Hero Image -->
 
         <div class="project-hero">
           <img src="mockups/main_application_interface.jpg" alt="application interface" />
         </div>
 
+      <!-- Case Study Structure (Overview) -->
 
         <h4 class="minor-subheading">Case Study Structure (Overview)</h4>
 
@@ -91,9 +155,11 @@
 
       <hr class="section-divider thin" />
 
+      <!-- Project Overview -->
+
         <div class="icon-with_subheading">
           <img src="icons/document-icon.svg" alt="document icon" />
-          <h3 class="subheading-h3">Project Overview</h3>
+          <h3 class="subheading-h3" id="overview">Project Overview</h3>
         </div>
 
         <p class="paragraph-project">AutoFill Resume Pro is a C# WinForms desktop application that generates professional resumes in A4 and US Letter formats. It streamlines resume building with customizable colors, icons, fonts, and autosave.
@@ -101,9 +167,11 @@
           
           <hr class="section-divider thin" />
 
+      <!-- The Problem -->
+
         <div class="icon-with_subheading">
           <img src="icons/warning-icon.svg" alt="warning icon" />
-          <h3 class="subheading-h3">The Problem</h3>
+          <h3 class="subheading-h3" id="problem">The Problem</h3>
         </div>
 
         <ul class="ul-list">
@@ -112,14 +180,16 @@
           <li>Non-technical users need a tool that's simple, professional, and flexible.</li>
         </ul>
 
-    <hr class="section-divider thin" />    
+    <hr class="section-divider thin" />  
+    
+      <!-- Market Research & User Insights -->
         
     <section class="text-img-container">
         <section class="image-wrapper">
         
         <div class="icon-with_subheading">
           <img src="icons/search-icon.svg" alt="search icon" />
-          <h3 class="subheading-h3">Market Research & User Insights</h3>
+          <h3 class="subheading-h3" id="research">Market Research & User Insights</h3>
         </div>
 
         <ul class="ul-list">
@@ -149,9 +219,11 @@
 
     <hr class="section-divider thin" /> 
 
+      <!-- Goal -->
+
       <div class="icon-with_subheading">
           <img src="icons/goal-icon.svg" alt="goal icon" />
-          <h3 class="subheading-h3">Goal</h3>
+          <h3 class="subheading-h3" id="goal">Goal</h3>
       </div>
 
       <ul class="ul-list">
@@ -163,9 +235,11 @@
 
     <hr class="section-divider thin" />
 
+      <!-- Tools & Technologies -->
+
       <div class="icon-with_subheading">
           <img src="icons/tools-icon.svg" alt="tool icon" />
-          <h3 class="subheading-h3">Tools & Technologies</h3>
+          <h3 class="subheading-h3" id="tools">Tools & Technologies</h3>
       </div>
 
       <ul class="ul-list">
@@ -179,9 +253,11 @@
 
     <hr class="section-divider thin" />
 
+      <!-- Process -->
+
       <div class="icon-with_subheading">
           <img src="icons/process-icon.svg" alt="process icon" />
-          <h3 class="subheading-h3">Process</h3>
+          <h3 class="subheading-h3" id="process">Process</h3>
       </div>
 
       <ol class="ol-list">
@@ -195,9 +271,11 @@
 
     <hr class="section-divider thin" />
 
+      <!-- Challenges & Learnings -->
+
       <div class="icon-with_subheading">
           <img src="icons/challenges-icon.svg" alt="challenges icon" />
-          <h3 class="subheading-h3">Challenges & Learnings</h3>
+          <h3 class="subheading-h3" id="challenges">Challenges & Learnings</h3>
       </div>
 
       <ul class="ul-list">
@@ -209,18 +287,22 @@
 
     <hr class="section-divider thin" />
 
+      <!-- Planning / User Flows -->
+
       <div class="icon-with_subheading">
           <img src="icons/planning-icon.svg" alt="planning icon" />
-          <h3 class="subheading-h3">Planning / User flows</h3>
+          <h3 class="subheading-h3" id="planning">Planning / User flows</h3>
       </div>
 
       <img src="wirefefames & planning/Design Planning.png" alt="planning image" class="block-img" />
       
     <hr class="section-divider thin" />
 
+      <!-- Visuals / Mockups / Screenshots -->
+
       <div class="icon-with_subheading">
           <img src="icons/img.svg" alt="image icon" />
-          <h3 class="subheading-h3">Visuals / Mockups / Screenshots</h3>
+          <h3 class="subheading-h3" id="visuals">Visuals / Mockups / Screenshots</h3>
       </div>
 
       <p class="paragraph-project">These visuals demonstrate how AutoFill Resume Pro delivers on its core goals: <strong>ease of use, customization, and professional branding.</strong></p>
@@ -230,7 +312,7 @@
     
     <section id="screenshots" class="images-section">
 
-    <!--Thumbnail Grid-->
+     <!--Thumbnail Grid-->
 
     <div class="gallery-grid" data-gallery>
       
@@ -340,7 +422,7 @@
  </div> 
 </section>
 
-  <!-- lightbox -->
+    <!-- lightbox -->
 
    <div class="lightbox" data-lightbox hidden>
     <div class="lightbox_backdrop" data-close tabindex="-1"></div>
@@ -367,7 +449,7 @@
 
     <hr class="section-divider thin" />
 
-  <!-- Short demo (15s) -->  
+    <!-- Short demo (15s) -->  
 
    <section class="video-section">
     <h3 class="subheading-h3 video">Short demo (15s)</h3>
@@ -387,11 +469,11 @@
 
     <hr class="section-divider thin" />
 
-  <!-- Outcome -->
+    <!-- Outcome -->
 
     <div class="icon-with_subheading">
         <img src="icons/outcome.svg" alt="results icon" />
-        <h3 class="subheading-h3">Outcome</h3>
+        <h3 class="subheading-h3" id="outcome">Outcome</h3>
     </div>
 
     <ul class="ul-list">
@@ -403,13 +485,13 @@
 
     <hr class="section-divider thin" />
 
-  <!-- Impact & Reflection -->
+    <!-- Impact & Reflection -->
 
     <section class="text-img-container">
       <section class="image-wrapper">
     <div class="icon-with_subheading">
         <img src="icons/reflection.svg" alt="reflection icon" />
-        <h3 class="subheading-h3">Impact & Reflection</h3>
+        <h3 class="subheading-h3" id="reflection">Impact & Reflection</h3>
     </div>
 
     <h4 id="minor-subheading">What I achieved</h4>
@@ -434,9 +516,9 @@
  
     <hr class="section-divider thin" />
 
-  <!-- Future Enhancements / Next Steps -->
+    <!-- Future Enhancements / Next Steps -->
 
-      <h3 id="subheading-h3">Future Enhancements / Next Steps</h3>
+      <h3 id="subheading-h3"><strong>Future Enhancements / Next Steps</strong></h3>
         <ul class="ul-list">
           <li><strong>Web-Based Platform</strong> — Responsive web app for broader accessibility.</li>
           <li><strong>User Accounts & Dashboard</strong> — Save progress, track applications (Procore-style interface).</li>
@@ -449,7 +531,7 @@
 
         <hr class="section-divider thin" />
 
-  <!-- Links & Resources -->
+    <!-- Links & Resources -->
 
      <div class="icon-with_subheading">
           <img src="icons/icon-link.svg" alt="image icon" />
@@ -483,6 +565,8 @@
       </nav> 
 
     <hr class="section-divider" />
+
+    <a href="#top" class="back-to-top">↑ Back to top</a>
   </main>
 
       <!-- F O O T E R -->
