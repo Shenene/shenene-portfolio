@@ -85,3 +85,5 @@
     if (e.key === "ArrowRight") next();
   });
 })();
+
+// Carousel
