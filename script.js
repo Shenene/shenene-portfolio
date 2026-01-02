@@ -341,3 +341,31 @@ window.addEventListener("load", () => {
   emailField.addEventListener("input", validateEmail);
   messageField.addEventListener("input", validateMessage);
 })();
+
+// ========== Mobile Nav Toggle ==========
+(function () {
+  const btn = document.querySelector(".nav-toggle");
+  const menu = document.getElementById("mobile-nav");
+  if (!btn || !menu) return;
+
+  btn.addEventListener("click", () => {
+    const open = menu.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  // Close after clicking a link
+  menu.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      menu.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  // click outside closes menu
+  document.addEventListener("click", (e) => {
+    if (!menu.classList.contains("is-open")) return;
+    if (menu.contains(e.target) || btn.contains(e.target)) return;
+    menu.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  });
+})();

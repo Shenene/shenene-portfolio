@@ -95,6 +95,65 @@ nav a[aria-current="page"] {
   align-items: center;
 }
 
+/* ========== MOBILE NAV ========== */
+
+/* Hide mobile controls on desktop */
+.nav-toggle,
+.mobile-nav {
+  display: none;
+}
+
+/* Mobile-only */
+@media (max-width: 640px) {
+  /* Hide the desktop nav links */
+  .nav-inner {
+    display: none;
+  }
+
+  /* Position hamburger in the top bar */
+  .topnav {
+    justify-content: flex-end;
+    padding-inline: 1rem;
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+
+  /* Dropdown panel */
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 60px; /* same as your .topnav height */
+    right: 12px;
+
+    width: min(280px, calc(100vw - 24px));
+    background: #dddddd; /* matches your header */
+    border-radius: 10px;
+    padding: 10px 14px;
+    z-index: 1000;
+  }
+
+  .mobile-nav.is-open {
+    display: block;
+  }
+
+  /* Links stack */
+  .mobile-nav a {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
 /* _________________________________________ */
 
 /* INDEX SCREEN */

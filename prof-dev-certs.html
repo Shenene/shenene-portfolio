@@ -11,16 +11,36 @@
   <body>
     <!-- M A I N   N A V I G A T I O N -->
       <header class="site-header">
-        <nav class="topnav">
-          <div class="nav-inner">
+        <nav class="topnav" aria-label="Primary">
+          <div class="nav-inner" id="primary-nav">
         <a href="index.html">Home</a>
         <a href="index.html#about">About Me</a>
         <a href="projects.html">Projects</a>
         <a href="prof-dev-certs.html" aria-current="page">Prof. Dev / Certs</a>
         <a href="contact.html">Contact</a>
       </div>
-      </nav>
-    </header>
+
+    <!-- Mobile hamburger -->
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <span class="visually-hidden">Menu</span>
+      ☰
+    </button>
+
+    <!-- Mobile dropdown menu (hidden by default) -->
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="index.html#about">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="prof-dev-certs.html">Prof. Dev / Certs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+   </nav>
+  </header>
 
      <!-- M A I N   C O N T E N T -->
     <main>
