@@ -33,23 +33,6 @@ body {
 
 /* ______________________________________________________________________________ */
 
-/* RESPONSIVE LAYOUT (MOBILE) */
-/* Base = mobile styles (up to ~767px) */
-
-/* Tablet */
-@media (min-width: 768px) {
-}
-
-/* Small desktop / Laptop */
-@media (min-width: 1024px) {
-}
-
-/* Large desktop (1440+) */
-/* @media (min-width: 1440px) {
-} */
-
-/* ______________________________________________________________________________ */
-
 /* GLOBAL STYLING */
 
 /* Links */
@@ -367,25 +350,6 @@ h3 {
 .social-links a:hover {
   opacity: 0.7;
 }
-
-/* @media (min-width: 768px) {
-  .about-layout {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 3rem;
-  }
-} 
-
-  @media (max-width: 900px) {
-  .pattern-img {
-  display: none;
-}
-
-  .case-icons-container {
-  padding-right: 0;
-  }
-}  
-*/
 
 /* _________________________________________ */
 
@@ -871,15 +835,6 @@ h3 {
   margin-top: 20px;
 }
 
-@media (max-width: 560px) {
-  .lightbox_dialog {
-    grid-template-columns: 44px 1fr 44px;
-    width: calc(100vw - 24px);
-    margin-top: 4vh;
-    height: 88vh;
-  }
-}
-
 #chart {
   width: 400px;
   height: 390px;
@@ -1050,27 +1005,6 @@ h3 {
   background: rgba(26, 46, 79, 0.8);
 }
 
-/* Responsive */
-@media (max-width: 980px) {
-  .cert-carousel_track {
-    grid-auto-columns: calc((100% - 20px) / 2);
-  }
-}
-
-@media (max-width: 640px) {
-  .cert-carousel_wrap {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-carousel_btn {
-    display: none;
-  }
-
-  .cert-carousel_track {
-    grid-auto-columns: 85%;
-  }
-}
-
 /* C O N T A C T */
 .form-wrapper fieldset {
   border: none;
@@ -1204,4 +1138,84 @@ h3 {
   font-size: 16px;
   line-height: 1.6;
   color: #1a2e4f;
+}
+
+/* ______________________________________________________________________________ */
+
+/* RESPONSIVE LAYOUTS */
+/* Base = mobile styles (up to ~767px) */
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Small desktop / Laptop */
+@media (min-width: 1024px) {
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .page {
+    max-width: 1200px;
+  }
+}
+
+/* XL Desktop */
+@media (min-width: 1440px) {
+  .page {
+    max-width: 1280px;
+  }
+}
+
+/* Large desktop (1440+) */
+/* @media (min-width: 1440px) {
+} */
+
+/* @media (min-width: 768px) {
+  .about-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+} */
+
+@media (max-width: 900px) {
+  .pattern-img {
+    display: none;
+  }
+
+  .case-icons-container {
+    padding-right: 0;
+  }
+}
+
+/* Lightbox */
+@media (max-width: 560px) {
+  .lightbox_dialog {
+    grid-template-columns: 44px 1fr 44px;
+    width: calc(100vw - 24px);
+    margin-top: 4vh;
+    height: 88vh;
+  }
+}
+
+/* Certificates Carousel */
+@media (max-width: 980px) {
+  .cert-carousel_track {
+    grid-auto-columns: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .cert-carousel_wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-carousel_btn {
+    display: none;
+  }
+
+  .cert-carousel_track {
+    grid-auto-columns: 85%;
+  }
 }
