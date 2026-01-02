@@ -1,6 +1,11 @@
 "use strict";
 
-// Lightbox Gallery
+// Always start pages at the top on load
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
+// ========== Lightbox Gallery ========== //
 (() => {
   const gallery = document.querySelector("[data-gallery]");
   const lightbox = document.querySelector("[data-lightbox]");
@@ -244,4 +249,95 @@
   window.addEventListener("load", buildDots);
 
   buildDots();
+})();
+
+// ========== Contact Form Validation ========== //
+(function () {
+  const form = document.querySelector(".form-wrapper");
+  if (!form) return;
+
+  const nameField = document.getElementById("name");
+  const emailField = document.getElementById("email");
+  const messageField = document.getElementById("message");
+
+  const nameError = document.getElementById("name-error");
+  const emailError = document.getElementById("email-error");
+  const messageError = document.getElementById("message-error");
+
+  function setError(fieldEl, errorEl, message) {
+    const fieldWrap = fieldEl.closest(".field");
+    if (!fieldWrap || !errorEl) return;
+
+    if (message) {
+      fieldWrap.classList.add("has-error");
+      fieldEl.setAttribute("aria-invalid", "true");
+      errorEl.textContent = message;
+    } else {
+      fieldWrap.classList.remove("has-error");
+      fieldEl.removeAttribute("aria-invalid");
+      errorEl.textContent = "";
+    }
+  }
+
+  function validateName() {
+    const value = nameField.value.trim();
+    if (!value) {
+      setError(nameField, nameError, "Please enter your name.");
+      return false;
+    }
+    setError(nameField, nameError, "");
+    return true;
+  }
+
+  function validateEmail() {
+    const value = emailField.value.trim();
+
+    if (!value) {
+      setError(emailField, emailError, "Please enter your email address.");
+      return false;
+    }
+
+    if (emailField.validity.typeMismatch) {
+      setError(emailField, emailError, "Please enter a valid email (example: you@domain.com).");
+      return false;
+    }
+
+    setError(emailField, emailError, "");
+    return true;
+  }
+
+  function validateMessage() {
+    const value = messageField.value.trim();
+    if (!value) {
+      setError(messageField, messageError, "Please enter a message.");
+      return false;
+    }
+    setError(messageField, messageError, "");
+    return true;
+  }
+
+  function validateAll() {
+    const okName = validateName();
+    const okEmail = validateEmail();
+    const okMsg = validateMessage();
+
+    // Focus first invalid field
+    if (!okName) nameField.focus();
+    else if (!okEmail) emailField.focus();
+    else if (!okMsg) messageField.focus();
+
+    return okName && okEmail && okMsg;
+  }
+
+  // Validate on submit
+  form.addEventListener("submit", (e) => {
+    if (!validateAll()) {
+      e.preventDefault();
+    }
+  });
+
+  // Clear errors as user fixes things
+  nameField.addEventListener("input", validateName);
+  emailField.addEventListener("input", validateEmail);
+  messageField.addEventListener("input", validateMessage);
 })();

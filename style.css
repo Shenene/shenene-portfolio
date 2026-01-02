@@ -1072,6 +1072,136 @@ h3 {
 }
 
 /* C O N T A C T */
+.form-wrapper fieldset {
+  border: none;
+}
+
 .form-wrapper {
-  margin-top: 20px;
+  margin-top: 10px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.contact-detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.name,
+.email,
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+}
+
+.field label {
+  font-size: 18px;
+  color: #1a2e4f;
+  font-weight: 600;
+}
+
+.email {
+  display: flex;
+  justify-self: flex-end;
+  /* width: calc((100% - 600px) / 2); */
+}
+
+.message {
+  max-width: 900px;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+
+.name input,
+.email input {
+  padding-inline: 10px;
+  padding-block: 10px;
+  border: solid 1px #8f8f8f;
+  border-radius: 8px;
+}
+
+.message textarea {
+  padding-inline: 10px;
+  padding-block: 10px;
+  border: solid 1px #8f8f8f;
+  border-radius: 8px;
+}
+
+.btn_submit {
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.field.has-error input,
+.field.has-error textarea {
+  border-color: #9b1c1c;
+  background-color: rgba(166, 28, 28, 0.04);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #a98638;
+  box-shadow: 0 0 0 3px rgba(169, 134, 56, 0.25);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.error-message {
+  display: none;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #c0392b;
+}
+
+.field.has-error .error-message {
+  display: block;
+}
+
+.field.has-error input,
+.field.has-error textarea {
+  border-color: #9b1c1c;
+  background-color: rbga(166, 28, 28, 0.04);
+}
+
+/* C O N T A C T   S U C C E S S   P A G E */
+.success-message {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.success-message h2 {
+  color: #1a2e4f;
+  margin-bottom: 16px;
+}
+
+.success-message p {
+  max-width: 600px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a2e4f;
 }

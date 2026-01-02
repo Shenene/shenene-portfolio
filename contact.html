@@ -29,19 +29,54 @@
         <section id="contact" class="content-section">
           <h2>CONTACT</h2>
           <p>For collaboration, feedback, or professional opportunities, please use the form below.</p>
-          <form class="form-wrapper">
-            <fieldset>
-              <legend class="visually-hidden">Your Details</legend>
+          
+          
+          <!-- Form -->
+          <form
+            class ="form-wrapper"
+            name="contact"
+            method:"POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/contact-success.html"
+            novalidate>
+
+          <input type="hidden" name="form-name" value="contact" />
+
+      <!-- Honeypot field (hidden from users) -->
+      <p class="visually-hidden">
+        <label>
+          Don't fill this out if you're human:
+          <input name="bot-field" />
+        </label>
+      </p>
+
+
+      <fieldset>
+        <legend class="visually-hidden">Your Details</legend>
+          
+          <div class="contact-detail-wrapper">
+            <div class="field name">
               <label for="name">NAME</label>
               <input type="text" id="name" name="name" placeholder="Your name" required />
+              <span class="error-message" id="name-error" aria-live="polite"></span>
+            </div>
 
+            <div class="field email"> 
               <label for="email">EMAIL</label>
-              <input type="email" id="email" name="email" placeholder="youremail@emailcom" required />
-
+              <input type="email" id="email" name="email" placeholder="you@domain.com" required />
+              <span class="error-message" id="email-error" aria-live="Polite"></span>
+          </div> 
+        </div>
+              
+          <div class="field message">  
               <label for="message">MESSAGE</label>
               <textarea id="message" name="message" placeholder="Type your message here..." rows="6" required></textarea>
-            </fieldset>
-            <button type="submit">Send Message</button>
+            <span class="error-message" id="message-error" aria-live="Polite"></span>
+          </div>
+            
+      </fieldset>
+            <button class="btn btn_submit" type="submit">Send Message</button>
           </form>
         </section>
       </main>
