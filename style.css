@@ -105,6 +105,36 @@ nav a[aria-current="page"] {
 
 /* _________________________________________ */
 
+/* F O O T E R */
+.site-footer {
+  padding-block: 2rem;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 3.2rem;
+}
+
+.footer-copy {
+  color: #7a7a7a;
+}
+
+.social-links nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+/* _________________________________________ */
+
 /* INDEX SCREEN */
 
 /* M A I N   C O N T E N T */
@@ -327,36 +357,6 @@ h3 {
 
 .about-paragraph:last-child {
   margin-bottom: 0;
-}
-
-/* _________________________________________ */
-
-/* F O O T E R */
-.site-footer {
-  padding-block: 2rem;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 3.2rem;
-}
-
-.footer-copy {
-  color: #7a7a7a;
-}
-
-.social-links nav {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.social-links a:hover {
-  opacity: 0.7;
 }
 
 /* _________________________________________ */
@@ -1648,25 +1648,50 @@ h3 {
   }
 }
 
-/* =====================
-=====================
--------------------------------------------
--=============================
-================================
-========================== */
+/* -------------------------------- */
 
 /* Large Desktop */
 @media (min-width: 1280px) {
   .page {
-    max-width: 1200px;
+    padding-inline: 100px;
+  }
+
+  .nav-inner {
+    padding-inline: 100px;
+  }
+
+  .hero h1 {
+    width: 500px;
+    margin-bottom: 30px;
+  }
+
+  .hero h2 {
+    margin-inline: auto;
+    width: 500px;
+  }
+
+  .hero-featured h2 {
+    padding-left: 65px;
+  }
+
+  /* About Me */
+
+  .about-content {
+    max-width: 85ch;
+    padding: 0px;
+    margin-left: 30px;
+  }
+
+  /* F O O T E R */
+  .footer-inner {
+    padding-inline: 100px;
   }
 }
 
+/* -------------------------------- */
+
 /* XL Desktop */
 @media (min-width: 1440px) {
-  .page {
-    max-width: 1280px;
-  }
 }
 
 /* Large desktop (1440+) */
