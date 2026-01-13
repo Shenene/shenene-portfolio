@@ -1208,9 +1208,31 @@ h3 {
 /* INDEX SCREEN */
 /* M A I N   C O N T E N T */
 @media (max-width: 320px) {
+  .content-center {
+    max-width: 300px;
+  }
+
+  .hero {
+    max-width: 300px;
+    padding: 5px;
+  }
+
+  .hero-description {
+    max-width: 34ch;
+  }
+
+  /* About Me */
+  .about-content {
+    margin-left: 20px;
+    max-width: 27ch;
+  }
+}
+
+/* ------------------------------------------------------ */
+
+@media (max-width: 375px) {
   .page {
     width: 100%;
-    max-width: 320px;
     margin-inline: auto;
     padding-inline: 16px;
   }
@@ -1263,7 +1285,7 @@ h3 {
     justify-content: center;
     align-content: center;
     width: 100%;
-    max-width: 300px;
+    max-width: 315px;
     padding: 5px;
     margin: 0 auto;
   }
@@ -1275,9 +1297,9 @@ h3 {
     align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 300px;
+    max-width: 315px;
     margin: 2.5rem auto;
-    padding: 5px;
+    padding: 0px;
   }
 
   .hero h1 {
@@ -1314,7 +1336,7 @@ h3 {
 
   .hero-description {
     line-height: 1.6;
-    max-width: 34ch;
+    max-width: 40ch;
     text-align: left;
     margin: 8px;
   }
@@ -1365,16 +1387,9 @@ h3 {
     max-width: 200px;
   }
 
-  /* .hero-left .btn,
-  .hero-featured .btn {
-    display: block;
-    width: 100%;
-    max-width: 260px;
-    margin-inline: auto;
-  } */
-
   /* _____________________________________________________ */
 
+  /* About Me */
   .about-wrapper {
     display: flex;
     flex-direction: column;
@@ -1387,8 +1402,8 @@ h3 {
     text-align: left;
     padding: 0;
     margin-top: 40px;
-    margin-left: 20px;
-    max-width: 27ch;
+    margin-inline: 15px;
+    max-width: 40ch;
   }
 
   .about-layout {
@@ -1444,21 +1459,7 @@ h3 {
 ______________________________ 
 
 
-/* 
 
-.footer-copy {
-  color: #7a7a7a;
-}
-
-.social-links nav {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.social-links a:hover {
-  opacity: 0.7;
-} */
 
 /* ++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++
