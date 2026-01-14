@@ -1320,15 +1320,21 @@ h3 {
 /* Mobile */
 @media (max-width: 375px) {
   /* Section divider added */
-  .hero-left::before {
+  .hero-left::before,
+  .featured-wrapper::before {
     content: "";
     display: block;
     height: 1px;
     width: 100%;
     max-width: 300px;
-    margin: 2rem auto;
+    margin: 0px auto 4rem auto;
+    background: #b39348;
     opacity: 0.4;
     border-radius: 999px;
+  }
+
+  .featured-wrapper::before {
+    margin-bottom: 2rem;
   }
 
   .page {
@@ -1371,7 +1377,7 @@ h3 {
     max-width: 100%;
     height: auto;
     margin: 0;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
   .hero-left .btn {
