@@ -140,7 +140,7 @@ nav a[aria-current="page"] {
 /* M A I N   C O N T E N T */
 .hero-content-wrapper {
   width: 100%;
-  height: 550px;
+  height: auto;
   display: flex;
   max-width: 1200px;
   flex-direction: row;
@@ -1204,33 +1204,133 @@ h3 {
 }
 
 /* ----------------------- */
-/* Mobile */
 /* INDEX SCREEN */
-/* M A I N   C O N T E N T */
-@media (max-width: 320px) {
+/* Tablet */
+@media (max-width: 768px) {
+  .page {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 40px;
+  }
+
+  .nav-inner {
+    padding-inline: 40px;
+  }
+
+  .hero-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
   .content-center {
-    max-width: 300px;
+    padding: 0;
   }
 
   .hero {
-    max-width: 300px;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 768px;
+    margin: 2.5rem auto;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    width: 250px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+
+  .hero h2 {
+    line-height: 1.4;
+    width: 250px;
+  }
+
+  .hero-lead {
+    text-align: left;
+    padding-left: 0.8rem;
   }
 
   .hero-description {
-    max-width: 34ch;
+    text-align: left;
   }
 
-  /* About Me */
+  .hero-featured {
+    padding-left: 0px;
+    padding-top: 100px;
+    max-width: 200px;
+  }
+
+  .featured-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-featured h3 {
+    padding-left: 12px;
+  }
+
+  .hero-featured h2,
+  h3 {
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  .hero-featured p {
+    padding-left: 12px;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.2rem;
+    max-width: 215px;
+  }
+
+  .btn-casestudy {
+    margin-left: 10px;
+    min-width: 193px;
+  }
+
+  /* About */
+  #photo {
+    width: 220px;
+    height: 220px;
+  }
+
   .about-content {
-    margin-left: 20px;
-    max-width: 27ch;
+    padding: 0px;
+  }
+
+  /* .about-content {
+    text-align: left;
+  } */
+
+  /* Footer */
+  .footer-inner {
+    padding-inline: 40px;
   }
 }
 
 /* ------------------------------------------------------ */
 
+/* Mobile */
 @media (max-width: 375px) {
+  /* Section divider added */
+  .hero-left::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+    opacity: 0.4;
+    border-radius: 999px;
+  }
+
   .page {
     width: 100%;
     margin-inline: auto;
@@ -1346,6 +1446,12 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+  }
+
+  .featured-img {
+    width: 230px;
+    height: 230px;
   }
 
   .hero-featured {
@@ -1360,14 +1466,18 @@ h3 {
     padding-top: 35px;
   }
 
+  .hero-featured h2 {
+    padding-left: 0;
+  }
+
   .hero-featured h3 {
     text-align: left;
-    padding-left: 33px;
+    padding-left: 20px;
   }
 
   .hero-featured p {
     display: flex;
-    padding-left: 33px;
+    padding-left: 20px;
     text-align: left;
     max-width: 25ch;
     flex-wrap: wrap;
@@ -1453,118 +1563,40 @@ h3 {
 
 /* ------------------------------------------------------ */
 
-/* Tablet */
-@media (max-width: 768px) {
-  /* M A I N   N A V I G A T I O N */
-  /* HEADER */
-  .page {
-    width: 100%;
-    margin-inline: auto;
-    padding-inline: 40px;
-  }
-
-  .nav-inner {
-    padding-inline: 40px;
-  }
-
-  /* =========================== */
-
-  .hero-content-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 24px;
-  }
-
+/* M A I N   C O N T E N T */
+@media (max-width: 320px) {
   .content-center {
-    padding: 0;
+    max-width: 300px;
   }
 
   .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    width: 100%;
-    max-width: 768px;
-    margin: 2.5rem auto;
-    padding: 10px;
-  }
-
-  .hero h1 {
-    width: 250px;
-    margin-bottom: 30px;
-    line-height: 1.4;
-  }
-
-  .hero h2 {
-    line-height: 1.4;
-    width: 250px;
-  }
-
-  .hero-lead {
-    text-align: left;
-    padding-left: 0.8rem;
+    max-width: 300px;
+    padding: 5px;
   }
 
   .hero-description {
-    text-align: left;
+    max-width: 34ch;
   }
 
-  .hero-featured {
-    padding-left: 0px;
-    padding-top: 118px;
-  }
-
-  .featured-img {
-    width: 220px;
-    height: 220px;
-  }
-
-  .hero-featured h3 {
-    padding-left: 12px;
-  }
-
-  .hero-featured h2,
-  h3 {
-    text-align: left;
-    padding-left: 60px;
-  }
-
-  .hero-featured p {
-    padding-left: 12px;
-    text-align: left;
-    margin-bottom: 15px;
-    line-height: 1.2rem;
-    max-width: 215px;
-  }
-
-  .btn-casestudy {
-    margin-left: 10px;
-    min-width: 193px;
-  }
-
-  /* About */
-  #photo {
-    width: 220px;
-    height: 220px;
-  }
-
+  /* About Me */
   .about-content {
-    padding: 0px;
+    margin-left: 20px;
+    max-width: 27ch;
   }
-
-  /* .about-content {
-    text-align: left;
-  } */
 }
 
 /* ------------------------------------------- */
 
 /* Small desktop / Laptop */
 @media (min-width: 1024px) {
+  .page {
+    padding-inline: 100px;
+  }
+
+  .nav-inner {
+    padding-inline: 100px;
+  }
+
   a.btn {
     margin-inline: auto;
     margin-top: 5px;
@@ -1573,11 +1605,11 @@ h3 {
   }
 
   .hero-content-wrapper {
-    gap: 24px;
+    gap: 30px;
   }
 
   .content-center {
-    padding: 0;
+    padding: 5px;
   }
 
   .hero {
@@ -1646,6 +1678,11 @@ h3 {
   .about-content {
     padding: 0px;
   }
+
+  /* F O O T E R */
+  .footer-inner {
+    padding-inline: 100px;
+  }
 }
 
 /* -------------------------------- */
@@ -1658,6 +1695,14 @@ h3 {
 
   .nav-inner {
     padding-inline: 100px;
+  }
+
+  .content-center {
+    padding: 30px;
+  }
+
+  .hero-content-wrapper {
+    gap: 30px;
   }
 
   .hero h1 {
@@ -1674,8 +1719,7 @@ h3 {
     padding-left: 65px;
   }
 
-  /* About Me */
-
+  /* About */
   .about-content {
     max-width: 85ch;
     padding: 0px;
@@ -1691,20 +1735,18 @@ h3 {
 /* -------------------------------- */
 
 /* XL Desktop */
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
+  .hero-content-wrapper {
+    gap: 30px;
+  }
 }
 
-/* Large desktop (1440+) */
-/* @media (min-width: 1440px) {
-} */
-
-/* @media (min-width: 768px) {
-  .about-layout {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 3rem;
-  }
-} */
+/* =====================================
+=========================================
+========================================
+=======================================
+=========================================
+*/
 
 @media (max-width: 900px) {
   .pattern-img {
