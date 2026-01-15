@@ -1362,15 +1362,67 @@ h3 {
     max-width: 220px;
   }
 
-  /* ------------------------------------------------------ */
-  /* PROJECTS - RESUME */
-  /* .pattern-img {
+  /* -------------------------------- */
+  /* PROJECTS RESUME */
+  .pattern-img {
     display: none;
   }
 
   .case-icons-container {
-    padding-right: 0;
-  } */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .case-icons {
+    gap: 4px;
+  }
+
+  .case-icons li {
+    width: 57px;
+  }
+
+  .case-icons li img {
+    width: 60px;
+    height: auto;
+  }
+
+  #empathy-map {
+    width: 300px;
+    height: auto;
+  }
+
+  .gallery_image-container_1,
+  .gallery_image-container_2,
+  .gallery_image-container_3 {
+    gap: 20px;
+  }
+
+  .thumb {
+    width: 210px;
+    height: 190px;
+    padding: 0px;
+  }
+
+  #main_interface,
+  #dashboard,
+  #generated_documents,
+  #installer,
+  #app_icons,
+  #global_styling,
+  #marketing_brand {
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    padding-inline: 10px;
+    padding-block: 10px;
+  }
+
+  #chart {
+    width: 320px;
+    height: 310px;
+  }
 }
 
 /* ------------------------------------------------------ */
