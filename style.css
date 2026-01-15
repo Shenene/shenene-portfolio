@@ -692,7 +692,7 @@ h3 {
 .thumb {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  /* align-items: center; */
   width: 320px;
   height: 300px;
 }
@@ -1696,7 +1696,7 @@ h3 {
     max-width: 34ch;
   }
 
-  /* About Me */
+  /* About */
   .about-content {
     margin-left: 20px;
     max-width: 27ch;
@@ -1810,6 +1810,7 @@ h3 {
   .footer-inner {
     padding-inline: 100px;
   }
+
   /* -------------------------------- */
   /* PROJECTS SCREEN */
   .project-card {
@@ -1841,6 +1842,43 @@ h3 {
 
   a.btn {
     margin-left: 0px;
+  }
+
+  /* -------------------------------- */
+  /* PROJECTS RESUME */
+  .pattern-img {
+    display: none;
+  }
+
+  .case-icons {
+    gap: 4px;
+  }
+
+  .gallery_image-container_1,
+  .gallery_image-container_2,
+  .gallery_image-container_3 {
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .thumb {
+    width: 255px;
+    height: 245px;
+  }
+
+  #main_interface,
+  #dashboard,
+  #generated_documents,
+  #installer,
+  #app_icons,
+  #global_styling,
+  #marketing_brand {
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    padding-inline: 10px;
+    padding-block: 10px;
   }
 }
 
