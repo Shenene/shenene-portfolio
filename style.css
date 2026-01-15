@@ -1729,6 +1729,136 @@ h3 {
   .project-card::after {
     display: none;
   }
+
+  /* -------------------------------- */
+  /* PROJECTS RESUME */
+  .content-section h2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .flow-arrow {
+    padding: 0 7px;
+  }
+
+  .icon-with_subheading img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pattern-img {
+    display: none;
+  }
+
+  .case-icons-container {
+    display: none;
+  }
+
+  .text-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #empathy-map {
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  #process-infographic {
+    width: 100%;
+  }
+
+  #resume-home-img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 370px;
+    width: 100%;
+  }
+
+  .gallery_image-container_1,
+  .gallery_image-container_2,
+  .gallery_image-container_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 370px;
+    gap: 20px;
+  }
+
+  .gallery-card {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .gallery-card .thumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-card h4,
+  .gallery-card p {
+    text-align: left;
+  }
+
+  .gallery-heading {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .gallery-paragraph {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  #main_interface,
+  #dashboard,
+  #generated_documents,
+  #installer,
+  #app_icons,
+  #global_styling,
+  #marketing_brand {
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    padding-inline: 10px;
+    padding-block: 10px;
+  }
+
+  #chart {
+    width: 320px;
+    height: 310px;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .microcopy {
+    display: none;
+  }
+
+  .footer-copy {
+    max-width: 200px;
+    line-height: 1.4;
+  }
 }
 
 /* ------------------------------------------- */
