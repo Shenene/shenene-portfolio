@@ -317,7 +317,7 @@ h3 {
 }
 
 /* _____________________________________________________ */
-
+/* About */
 .about-wrapper {
   display: flex;
 }
@@ -1846,6 +1846,10 @@ h3 {
     height: 310px;
   }
 
+  #marketing-paragraph {
+    padding-bottom: 0;
+  }
+
   .video-wrapper iframe {
     width: 100%;
     max-width: 370px;
@@ -1928,10 +1932,6 @@ h3 {
 
   .minor-subheading--first {
     margin-top: 0;
-  }
-
-  #marketing-paragraph {
-    padding-bottom: 0;
   }
 
   .gallery-card {
@@ -2089,10 +2089,6 @@ h3 {
 
   /* -------------------------------- */
   /* PROJECTS RESUME */
-  .pattern-img {
-    display: none;
-  }
-
   .case-icons {
     gap: 4px;
   }
