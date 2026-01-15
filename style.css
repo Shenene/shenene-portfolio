@@ -1674,7 +1674,7 @@ h3 {
     order: 5;
   }
 
-  /* ------------------------------------------------------ */
+  /* -------------------------------- */
   /* PROJECTS SCREEN */
   .content-section h2 {
     display: flex;
@@ -1891,6 +1891,67 @@ h3 {
 
   .project-card {
     padding-left: 28px;
+  }
+
+  /* -------------------------------- */
+  /* PROJECTS RESUME */
+  /* Breadcrumbs */
+  .breadcrumb a:last-child,
+  .breadcrumb span:last-child {
+    white-space: nowrap;
+  }
+
+  .breadcrumb a + a::before,
+  .breadcrumb a + span::before {
+    margin-inline: 7px;
+  }
+
+  .case-flow {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    flex-wrap: wrap;
+  }
+
+  .flow-arrow {
+    padding: 0 5px;
+  }
+
+  .image-wrapper {
+    margin-right: 0;
+  }
+
+  #chart {
+    width: 280px;
+    height: 270px;
+    margin-top: 50px;
+  }
+
+  .minor-subheading--first {
+    margin-top: 0;
+  }
+
+  #marketing-paragraph {
+    padding-bottom: 0;
+  }
+
+  .gallery-card {
+    max-width: 288px;
+  }
+
+  .gallery_image-container_1,
+  .gallery_image-container_2,
+  .gallery_image-container_3 {
+    max-width: 288px;
+  }
+
+  #main_interface,
+  #dashboard,
+  #generated_documents,
+  #installer,
+  #app_icons,
+  #global_styling,
+  #marketing_brand {
+    width: 280px;
   }
 }
 
