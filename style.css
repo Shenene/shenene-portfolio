@@ -917,6 +917,11 @@ h3 {
   grid-template-columns: 52px 1fr 52px;
   align-items: center;
   gap: 16px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  padding: 26px 26px 40px 26px;
 }
 
 .cert-carousel_viewport {
@@ -950,11 +955,17 @@ h3 {
 .certificate {
   scroll-snap-align: start;
   background: #ffffff;
-  border: 1px solid rgba(26, 46, 79, 0.15);
+  border: 2px solid rgba(26, 46, 79, 0.15);
+  transition: tranform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
+
+/* .certificate:hover {
+  border-color #a6a6a6;
+  transform: translateY(-3px);
+} */
 
 .certificate img {
   width: 100%;
@@ -969,12 +980,14 @@ h3 {
   margin: 14px 0 6px;
   font-size: 18px;
   color: #1a2e4f;
+  padding-left: 0;
 }
 
 .certificate p {
   margin: 0;
   color: #474647;
-  font-size: 15px;
+  font-size: 14px;
+  font-style: italic;
 }
 
 /* Arrows */
@@ -992,6 +1005,14 @@ h3 {
   place-items: center;
 }
 
+.cert-carousel_btn--next:hover {
+  transform: translateX(2px);
+}
+
+.cert-carousel_btn--prev:hover {
+  transform: translateX(-2px);
+}
+
 .cert-carousel_btn:focus-visible {
   outline: 3px solid rgba(169, 134, 56, 0.45);
   outline-offset: 3px;
@@ -999,10 +1020,15 @@ h3 {
 
 /* Dots */
 .cert-carousel_dots {
+  position: absolute;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
-  margin-top: 16px;
+  left: 50%;
+  bottom: 27%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* margin-top: 16px; */
 }
 
 .cert-carousel_dot {
@@ -1321,7 +1347,7 @@ h3 {
   }
 
   /* ------------------------------------------------------ */
-  /* PROJECTS SCREEN */
+  /* PROJECTS SCREEN (max-width: 768px) */
   .project-card {
     position: relative;
     z-index: 1;
@@ -1363,7 +1389,7 @@ h3 {
   }
 
   /* -------------------------------- */
-  /* PROJECTS RESUME */
+  /* PROJECTS RESUME (max-width: 768px) */
   .pattern-img {
     display: none;
   }
@@ -1422,6 +1448,17 @@ h3 {
   #chart {
     width: 320px;
     height: 310px;
+  }
+
+  /* -------------------------------- */
+  /* PROF-DEV-CERTS (max-width: 768px) */
+  .note-sub {
+    display: block;
+  }
+
+  /* Dots */
+  .cert-carousel_dots {
+    bottom: 258px;
   }
 }
 
@@ -1675,7 +1712,7 @@ h3 {
   }
 
   /* -------------------------------- */
-  /* PROJECTS SCREEN */
+  /* PROJECTS SCREEN (max-width: 375px) */
   .content-section h2 {
     display: flex;
     justify-content: center;
@@ -1731,7 +1768,7 @@ h3 {
   }
 
   /* -------------------------------- */
-  /* PROJECTS RESUME */
+  /* PROJECTS RESUME (max-width: 375px) */
   .content-section h2 {
     display: flex;
     justify-content: flex-start;
@@ -1863,6 +1900,107 @@ h3 {
     max-width: 200px;
     line-height: 1.4;
   }
+
+  /* -------------------------------- */
+  /* PROF-DEV-CERTS (max-width: 375px) */
+  .content-section h2 {
+    text-align: left;
+  }
+
+  .prof-dev-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .prof-dev-note_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .prof-dev-grid li {
+    margin-left: 20px;
+  }
+
+  /* -------------- */
+  .cert-carousel_btn {
+    display: none;
+  }
+
+  .cert-carousel_wrap {
+    position: relative;
+    display: block;
+    padding: 18px 16px 44px;
+  }
+
+  .cert-carousel_viewport {
+    overflow: hidden;
+  }
+
+  /* horizontal track scroll */
+  .cert-carousel_track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 12px;
+  }
+
+  .certificate {
+    min-width: 0;
+  }
+
+  .certificate img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Dots */
+  .cert-carousel_dots {
+    bottom: 222px;
+  }
+
+  .certificate h3 {
+    margin: 14px 0 6px;
+    font-size: 18px;
+    color: #1a2e4f;
+    padding-left: 0;
+  }
+
+  .certificate p {
+    margin: 0;
+    color: #474647;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  /* Arrows */
+  .cert-carousel_btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    border: 1px solid rgba(26, 46, 79, 0.18);
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+  }
+
+  .cert-carousel_btn--next:hover {
+    transform: translateX(2px);
+  }
+
+  .cert-carousel_btn--prev:hover {
+    transform: translateX(-2px);
+  }
+
+  .cert-carousel_btn:focus-visible {
+    outline: 3px solid rgba(169, 134, 56, 0.45);
+    outline-offset: 3px;
+  }
 }
 
 /* ------------------------------------------- */
@@ -1898,7 +2036,7 @@ h3 {
   }
 
   /* -------------------------------- */
-  /* PROJECTS RESUME */
+  /* PROJECTS RESUME (max-width: 320px) */
   /* Breadcrumbs */
   .breadcrumb a:last-child,
   .breadcrumb span:last-child {
@@ -1956,7 +2094,7 @@ h3 {
 }
 
 /* ------------------------------------------- */
-/* INDEX SCREEN */
+/* INDEX SCREEN (min-width: 1024px) */
 /* Small desktop / Laptop */
 @media (min-width: 1024px) {
   .page {
@@ -2055,7 +2193,7 @@ h3 {
   }
 
   /* -------------------------------- */
-  /* PROJECTS SCREEN */
+  /* PROJECTS SCREEN (min-width: 1024px) */
   .project-card {
     position: relative;
     z-index: 1;
@@ -2088,7 +2226,7 @@ h3 {
   }
 
   /* -------------------------------- */
-  /* PROJECTS RESUME */
+  /* PROJECTS RESUME (min-width: 1024px) */
   .case-icons {
     gap: 4px;
   }
