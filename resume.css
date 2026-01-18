@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ___________________________________________________ */
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", "Lato", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f2ed;
+  color: #474647;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+.page {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 3.2rem;
+}
+
+/* ___________________________________________________ */
+/* GLOBAL STYLING */
+
+a {
+  color: #474647;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #b39348;
+  transition: color 0.2s ease;
+}
+
+/* Divider Lines */
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #b39348;
+  margin: 4rem 0;
+  opacity: 0.85;
+}
+
+.v-divider {
+  width: 2px;
+  background-color: #b39348;
+  align-self: stretch; /* fills container height */
+}
+
+.section-divider.thin {
+  height: 1px;
+  opacity: 0.4;
+}
+
+.section-divider_short {
+  height: 2px;
+  width: 200px;
+  background-color: #b39348;
+  margin: 2rem 0;
+  opacity: 0.85;
+}
+
+/* ------------------------------------------ */
