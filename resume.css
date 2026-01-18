@@ -20,10 +20,17 @@ body {
   scroll-behavior: smooth;
 }
 
-.page {
+.resume-page {
   max-width: 1200px;
   margin-inline: auto;
-  padding-inline: 3.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  padding-bottom: 40px;
+}
+
+.resume-main {
+  padding: 0 60px;
 }
 
 /* ___________________________________________________ */
@@ -53,6 +60,7 @@ a:hover {
   width: 2px;
   background-color: #b39348;
   align-self: stretch; /* fills container height */
+  margin: 0 60px;
 }
 
 .section-divider.thin {
@@ -69,3 +77,167 @@ a:hover {
 }
 
 /* ------------------------------------------ */
+
+/* H E A D E R */
+.resume-header {
+  padding-inline: 0;
+  margin-inline: 0;
+}
+
+.resume-header_content,
+.resume-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 100%;
+  height: auto;
+}
+
+.resume-header_content {
+  padding: 40px 60px;
+  margin-bottom: 3px;
+  background-color: #dddddd;
+}
+
+.resume-contact {
+  margin-bottom: 20px;
+  padding: 30px 60px;
+  background-color: #dddddd;
+}
+
+.resume-name {
+  color: #b39348;
+  margin-bottom: 10px;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+
+.resume-title {
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+#phone,
+#location,
+#portfolio,
+#email,
+#linkedin,
+#github {
+  display: flex;
+  width: 400px;
+  max-width: 100%;
+  gap: 8px;
+}
+
+.contact-row_1,
+.contact-row_2 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+  gap: 80px;
+}
+
+.icon {
+  width: 24px;
+  height: auto;
+  padding-top: 2px;
+}
+
+.contact-row_1 {
+  margin-bottom: 10px;
+}
+
+.resume-actions {
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  height: 40px;
+  background-color: #b39348;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.17), 2px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.22), 3px 3px 5px rgba(0, 0, 0, 0.18);
+  color: #ffffff;
+  background-color: #c2a45c;
+  cursor: pointer;
+}
+
+h4 {
+  color: #b39348;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.pro-summary p {
+  width: 100%;
+  /* max-width: 105ch; */
+  text-align: justify;
+}
+
+.paragraph-main {
+  color: #b39348;
+  font-weight: 600;
+}
+
+.education {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+
+.education-left {
+  margin-bottom: 24px;
+}
+
+.education-left,
+.education-right {
+  flex: 1;
+  text-align: left;
+}
+
+.education li {
+  margin-left: 28px;
+}
+
+.education-right_construction {
+  margin-bottom: 24px;
+}
+
+/* Media Queries */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+  .resume-page {
+    background: #ffffff !important;
+    width: auto;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
