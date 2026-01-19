@@ -67,10 +67,7 @@ a:hover {
   margin-top: 40px;
 }
 
-.v-divider.v-divider_education {
-  margin-top: 8px;
-}
-
+.v-divider.v-divider_education,
 .v-divider.v-divider_int-ref {
   margin-top: 8px;
   margin-bottom: 3px;
@@ -224,6 +221,7 @@ h4 {
 .other-skills {
   color: #b39348;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .education {
@@ -318,6 +316,7 @@ h4 {
 .projects-paragraph::before {
   content: "";
   position: absolute;
+  top: 8px;
   left: 0px;
   bottom: 4px;
   width: 2px;
@@ -325,16 +324,16 @@ h4 {
   border-radius: 2px;
 }
 
-.achievements-paragraph::before {
-  top: 4px;
-}
-
-.projects-paragraph::before {
-  top: 8px;
-}
-
 .sub-text {
   margin-top: 20px;
+}
+
+.position {
+  margin-bottom: 10px;
+}
+
+.achievements-heading {
+  margin-bottom: 5px;
 }
 
 /* ---- S K I L L S ---- */
@@ -367,7 +366,7 @@ h4 {
 
 .project-info {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .project-3 .job-title,
@@ -380,7 +379,7 @@ h4 {
 }
 
 .project-details {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* ---- I N T E R E S T S ---- */
@@ -429,5 +428,125 @@ h4 {
     border: none;
     box-shadow: none;
     border-radius: 0;
+  }
+}
+
+/* max-width 1024px */
+@media (max-width: 1024px) {
+  .contact-row_1,
+  .contact-row_2 {
+    gap: 50px;
+  }
+}
+
+/* max-width 768px */
+@media (max-width: 768px) {
+  /* header */
+  .resume-contact {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .contact-row_1,
+  .contact-row_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-row_1 {
+    margin-bottom: 20px;
+    max-width: 50%;
+  }
+
+  .contact-row_2 {
+    max-width: 50%;
+  }
+
+  /* work experience */
+  .project-details,
+  .project-info {
+    margin-bottom: 10px;
+  }
+
+  /* skills */
+  .skills {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .v-divider.v-divider_skills {
+    display: none;
+  }
+
+  .tech-skills_list {
+    position: relative;
+    padding-bottom: 32px; /* space for line */
+    margin-bottom: 0px; /* space after line */
+  }
+
+  .tech-skills_list::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #b39348;
+    opacity: 0.2;
+  }
+
+  .section-divider_short {
+    width: 100%;
+  }
+}
+
+/* max-width 480px */
+@media (max-width: 480px) {
+  /* header */
+  .resume-name {
+    letter-spacing: 5px;
+  }
+
+  .resume-header_content,
+  .resume-contact,
+  .resume-main {
+    padding: 20px;
+  }
+
+  .resume-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* education */
+  .v-divider.v-divider_education {
+    margin: 8px 20px 3px 20px;
+  }
+
+  /* work experience */
+  .work-experience li {
+    text-align: left;
+  }
+
+  .pos-sep {
+    display: none;
+  }
+
+  .job-dates {
+    padding-left: 0;
+  }
+
+  .job-dates::before {
+    display: none;
+    text-align: left;
+  }
+
+  .position {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
 }
