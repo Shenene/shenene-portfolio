@@ -522,7 +522,8 @@ h4 {
   }
 
   /* education */
-  .v-divider.v-divider_education {
+  .v-divider.v-divider_education,
+  .v-divider.v-divider_int-ref {
     margin: 8px 20px 3px 20px;
   }
 
@@ -547,6 +548,36 @@ h4 {
   .position {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0;
+  }
+
+  .company,
+  .job-title,
+  .job-dates {
+    display: block;
+  }
+
+  .job-title {
+    margin-bottom: 4px;
+  }
+
+  .prev-position_4,
+  .prev-position_3,
+  .prev-position_2,
+  .prev-position_1 {
+    margin-bottom: 20px;
+  }
+
+  .prev-position_4 span,
+  .prev-position_3 span,
+  .prev-position_2 span,
+  .prev-position_1 span {
+    margin-bottom: 0;
+  }
+
+  .achievements-paragraph {
     text-align: left;
   }
 }
