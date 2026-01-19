@@ -70,11 +70,11 @@ a:hover {
 }
 
 .section-divider_short {
-  height: 2px;
-  width: 200px;
+  height: 1px;
+  width: 400px;
   background-color: #b39348;
   margin: 2rem 0;
-  opacity: 0.85;
+  opacity: 0.2;
 }
 
 h4 {
@@ -203,7 +203,11 @@ h4 {
 }
 
 /* ---- E D U C A T I O N---- */
-.paragraph-main {
+.paragraph-main,
+.tech-skills,
+.prof-skills,
+.soft-skills,
+.other-skills {
   color: #b39348;
   font-weight: 700;
 }
@@ -236,11 +240,6 @@ h4 {
 }
 
 /* ---- W O R K   E X P E R I E N C E ---- */
-/* .position {
-  font-weight: 800;
-  margin-bottom: 10px;
-} */
-
 .company {
   font-weight: 750;
   margin-bottom: 10px;
@@ -298,21 +297,58 @@ h4 {
   padding: 0;
 }
 
-.achievements-paragraph::before {
+.achievements-paragraph::before,
+.projects-paragraph::before {
   content: "";
   position: absolute;
   left: 0px;
-  top: 4px;
   bottom: 4px;
-  /* right: 3px; */
   width: 2px;
-  /* height: 40px; */
   background-color: #b39348;
   border-radius: 2px;
 }
 
+.achievements-paragraph::before {
+  top: 4px;
+}
+
+.projects-paragraph::before {
+  top: 8px;
+}
+
 .sub-text {
   margin-top: 20px;
+}
+
+/* ---- S K I L L S ---- */
+.skills {
+  display: flex;
+}
+
+.skills-container_left li {
+  margin-left: 20px;
+}
+
+.skills-container_right li {
+  margin-left: 20px;
+}
+
+.skills-container_right {
+  margin-top: 35px;
+}
+
+/* ---- P R O J E C T S ---- */
+.projects-paragraph {
+  padding-left: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.projects .job-title {
+  font-style: italic;
+}
+
+.project-info {
 }
 
 /* ------------------------------------------ */
