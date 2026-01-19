@@ -231,7 +231,10 @@ h4 {
 .education li,
 .position-3 li,
 .position-2 li,
-.position-1 li {
+.position-1 li,
+.project-3 li,
+.project-2 li,
+.project-1 li {
   margin-left: 28px;
 }
 
@@ -349,6 +352,17 @@ h4 {
 }
 
 .project-info {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.project-3 .job-title,
+.project-info {
+  font-style: italic;
+}
+
+.paragraph-sub {
+  margin-bottom: 20px;
 }
 
 /* ------------------------------------------ */
