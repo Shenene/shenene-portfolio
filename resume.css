@@ -63,9 +63,10 @@ a:hover {
   margin: 0 60px;
 }
 
-.section-divider.thin {
+.section-divider_thin {
   height: 1px;
-  opacity: 0.4;
+  margin: 2rem 0;
+  opacity: 0.2;
 }
 
 .section-divider_short {
@@ -76,9 +77,20 @@ a:hover {
   opacity: 0.85;
 }
 
+h4 {
+  color: #b39348;
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.resume-page strong {
+  font-weight: 700;
+}
+
 /* ------------------------------------------ */
 
-/* H E A D E R */
+/* ---- H E A D E R ---- */
 .resume-header {
   padding-inline: 0;
   margin-inline: 0;
@@ -151,6 +163,8 @@ a:hover {
   margin-bottom: 10px;
 }
 
+/* ---- M A I N ---- */
+/* Button */
 .resume-actions {
   margin-bottom: 40px;
 }
@@ -181,21 +195,17 @@ a:hover {
   cursor: pointer;
 }
 
-h4 {
-  color: #b39348;
-  margin-bottom: 10px;
-  font-weight: 800;
-}
-
+/* ---- P R O F E S S I O N A L   S U M M A R Y ---- */
 .pro-summary p {
   width: 100%;
-  /* max-width: 105ch; */
+  /* max-width: 90ch; */
   text-align: justify;
 }
 
+/* ---- E D U C A T I O N---- */
 .paragraph-main {
   color: #b39348;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .education {
@@ -214,7 +224,10 @@ h4 {
   text-align: left;
 }
 
-.education li {
+.education li,
+.position-3 li,
+.position-2 li,
+.position-1 li {
   margin-left: 28px;
 }
 
@@ -222,6 +235,87 @@ h4 {
   margin-bottom: 24px;
 }
 
+/* ---- W O R K   E X P E R I E N C E ---- */
+/* .position {
+  font-weight: 800;
+  margin-bottom: 10px;
+} */
+
+.company {
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+
+.position .job-title,
+.prev-position_summary .job-title {
+  color: #b39348;
+  padding-right: 8px;
+  font-weight: 700;
+}
+
+.job-dates {
+  position: relative;
+  padding-left: 8px;
+  font-style: italic;
+}
+
+.job-dates::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 5px;
+  right: 3px;
+  width: 2px;
+  height: 13px;
+  background: #474647;
+  border-radius: 2px;
+}
+
+.position-3,
+.position-2,
+.position-1 {
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.achievements-heading {
+  margin-top: 20px;
+  font-weight: 750;
+}
+
+.achievements-paragraph {
+  /* margin-bottom: 40px;
+  padding-left: 10px; */
+  margin: 0 0 40px 0;
+  padding: 0 0 0 10px;
+  position: relative;
+  list-style: none;
+}
+
+.achievements-paragraph li {
+  margin: 0;
+  padding: 0;
+}
+
+.achievements-paragraph::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  bottom: 4px;
+  /* right: 3px; */
+  width: 2px;
+  /* height: 40px; */
+  background-color: #b39348;
+  border-radius: 2px;
+}
+
+.sub-text {
+  margin-top: 20px;
+}
+
+/* ------------------------------------------ */
 /* Media Queries */
 @media print {
   @page {
