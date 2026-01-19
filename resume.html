@@ -74,7 +74,7 @@
             </ul>
           </div>
 
-          <div class="v-divider"></div>
+          <div class="v-divider v-divider_education"></div>
 
           <div class="education-right">
             <div class="education-right_construction">
@@ -212,7 +212,7 @@
             </ul>
           </div>
 
-          <div class="v-divider"></div>
+          <div class="v-divider v-divider_skills"></div>
 
           <div class="skills-container_right">
             <!-- PROFESSIONAL SKILLS -->
@@ -278,8 +278,10 @@
           <hr class="section-divider_thin" />
 
           <div class="project-2">
-            <span class="company">AutoFill Resume Pro</span> —
-            <span class="job-title">Product Designer & Developer</span>
+            <div class="project-details">
+              <span class="company">AutoFill Resume Pro</span> —
+              <span class="job-title">Product Designer & Developer</span>
+            </div>
             <ul>
               <li><strong>Designed</strong> and delivered a Windows desktop app (C# WinForms) that automates A4/US-Letter resume generation with color, icon, and font customization.</li>
               <li><strong>Produced</strong> a branded installer (Inno Setup) and a tutorial video; repo prepared for portfolio use. Showcases end-toend design → development → release capability and practical UI consistency/usability.</li>
@@ -293,7 +295,11 @@
           <hr class="section-divider_thin" />
 
           <div class="project-1">
-            <p>UX Portfolio (Mission Ready — Webflow 2025) — UX/UI Designer</p>
+            <div class="project-details">
+              <span class="company">UX Portfolio (Mission Ready — Webflow 2025)</span> —
+              <span class="job-title">UX/UI Designer</span>
+            </div>
+
             <ul>
               <li><strong>Designed</strong> and published a Webflow portfolio with integrated case study, lightbox visuals, and contact form.</li>
               <li><strong>Applied</strong> cohesive branding across LinkedIn, GitHub, and YouTube (gold, dark blue, neutral beige).</li>
@@ -308,19 +314,23 @@
         <hr class="section-divider" />
 
         <!-- I N T E R E S T S -->
-        <section class="interests">
-          <h4>INTERESTS</h4>
-          <p>Driven by curiosity and innovation, I enjoy exploring new technologies and creating design solutions through self-initiated briefs. I'm passionate about learning, experimenting with tools, and turning ideas into functional, engaging user experiences.</p>
-        </section>
+        <div class="interests-references_container">
+          <section class="interests">
+            <h4>INTERESTS</h4>
+            <p>Driven by curiosity and innovation, I enjoy exploring new technologies and creating design solutions through self-initiated briefs. I'm passionate about learning, experimenting with tools, and turning ideas into functional, engaging user experiences.</p>
+          </section>
 
-        <div class="v-divider"></div>
+          <div class="v-divider v-divider_int-ref"></div>
 
-        <!-- R E F E R E N C E S -->
-        <section class="references">
-          <h4>REFERENCES</h4>
-          <img src="icons/icon-person.svg" alt="person icon" />
-          <p>Available upon request</p>
-        </section>
+          <!-- R E F E R E N C E S -->
+          <section class="references">
+            <h4>REFERENCES</h4>
+            <div class="icon-text_wrapper">
+              <img src="icons/icon-person.svg" alt="person icon" class="icon" />
+              <p>Available upon request</p>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
   </body>

@@ -63,6 +63,19 @@ a:hover {
   margin: 0 60px;
 }
 
+.v-divider.v-divider_skills {
+  margin-top: 40px;
+}
+
+.v-divider.v-divider_education {
+  margin-top: 8px;
+}
+
+.v-divider.v-divider_int-ref {
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
 .section-divider_thin {
   height: 1px;
   margin: 2rem 0;
@@ -111,6 +124,7 @@ h4 {
   padding: 40px 60px;
   margin-bottom: 3px;
   background-color: #dddddd;
+  border-radius: 18px 18px 0 0;
 }
 
 .resume-contact {
@@ -363,6 +377,38 @@ h4 {
 
 .paragraph-sub {
   margin-bottom: 20px;
+}
+
+.project-details {
+  margin-bottom: 20px;
+}
+
+/* ---- I N T E R E S T S ---- */
+.interests-references_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  text-align: left;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.interests {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+/* ---- R E F E R E N C E S ---- */
+.references {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-text_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* ------------------------------------------ */
