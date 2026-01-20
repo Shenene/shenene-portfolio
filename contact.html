@@ -55,9 +55,9 @@
           <form
             class ="form-wrapper"
             name="contact"
-            method:"POST"
+            method="POST"
             data-netlify="true"
-            netlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
             action="/contact-success.html"
             novalidate>
 
@@ -85,14 +85,14 @@
             <div class="field email"> 
               <label for="email">EMAIL</label>
               <input type="email" id="email" name="email" placeholder="you@domain.com" required />
-              <span class="error-message" id="email-error" aria-live="Polite"></span>
+              <span class="error-message" id="email-error" aria-live="polite"></span>
           </div> 
         </div>
               
           <div class="field message">  
               <label for="message">MESSAGE</label>
               <textarea id="message" name="message" placeholder="Type your message here..." rows="6" required></textarea>
-            <span class="error-message" id="message-error" aria-live="Polite"></span>
+            <span class="error-message" id="message-error" aria-live="polite"></span>
           </div>
             
       </fieldset>
