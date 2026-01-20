@@ -210,7 +210,7 @@ nav a[aria-current="page"] {
   font-family: Montserrat;
   font-size: 36px;
   font-weight: 900;
-  color: #1a2e4f;
+  color: #b39348;
 }
 
 .hero h2 {
@@ -1459,6 +1459,595 @@ h3 {
   /* Dots */
   .cert-carousel_dots {
     bottom: 258px;
+  }
+}
+
+/* ------------------------------------------- */
+/* INDEX SCREEN */
+/* Mobile */
+@media (max-width: 480px) {
+  /* Section divider added */
+  .hero-left::before,
+  .featured-wrapper::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0px auto 4rem auto;
+    background: #b39348;
+    opacity: 0.4;
+    border-radius: 999px;
+  }
+
+  .featured-wrapper::before {
+    margin-bottom: 2rem;
+  }
+
+  .page {
+    width: 100%;
+    height: auto;
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+
+  /* 1) Name & Text First */
+  .content-center {
+    order: 1;
+  }
+
+  /* 2) Featured second  */
+  .featured-wrapper {
+    order: 2;
+  }
+
+  /* 3) Buttons Last */
+  .hero-left {
+    order: 3;
+  }
+
+  .hero-content-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-inline: auto;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    /* margin-top: 40px; */
+  }
+
+  .hero-left .btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 420px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    margin: 2.5rem auto;
+    padding: 0px;
+  }
+
+  .hero h1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 200px;
+    margin-bottom: 50px;
+    line-height: 1.4;
+  }
+
+  .hero h2 {
+    display: flex;
+    width: 300px;
+    max-width: 16ch;
+    flex-wrap: wrap;
+    line-height: 1.4;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    align-content: center;
+  }
+
+  .hero-lead {
+    margin-bottom: 1.8rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .hero-description {
+    line-height: 1.6;
+    max-width: 40ch;
+    text-align: left;
+    margin: 8px;
+  }
+
+  .featured-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .featured-img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .hero-featured {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    align-items: center;
+    padding: 35px;
+    padding-top: 35px;
+  }
+
+  .hero-featured h2 {
+    padding-left: 0;
+  }
+
+  .hero-featured h3 {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .hero-featured p {
+    display: flex;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 25ch;
+    flex-wrap: wrap;
+  }
+
+  .btn-casestudy {
+    margin-inline: auto;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .hero-featured .btn {
+    display: flex;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  /* About */
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .about-content {
+    text-align: left;
+    padding: 0;
+    margin-top: 40px;
+    margin-inline: 15px;
+    max-width: 40ch;
+  }
+
+  .about-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #photo {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* footer */
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-inner {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 3.2rem;
+  }
+
+  /* 4) Social-links */
+  .social-links {
+    order: 4;
+  }
+
+  /* 5) Footer-copy */
+  .footer-copy {
+    order: 5;
+  }
+
+  /* -------------------------------- */
+  /* PROJECTS SCREEN (max-width: 480px) */
+  .content-section h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-background {
+    display: flex;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 50px;
+  }
+
+  .project-mainheading {
+    order: 1;
+  }
+
+  .project-subheading {
+    order: 2;
+  }
+
+  .project-content p {
+    order: 3;
+    text-align: left;
+  }
+
+  .case-studies {
+    order: 4;
+    margin-bottom: 35px;
+  }
+
+  .project-image {
+    display: flex;
+    margin-inline: auto;
+    order: 5;
+    width: 240px;
+    max-width: 260px;
+    height: auto;
+  }
+
+  .project-card::after {
+    display: none;
+  }
+
+  /* -------------------------------- */
+  /* PROJECTS RESUME (max-width: 480px) */
+  .content-section h2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .flow-arrow {
+    padding: 0 7px;
+  }
+
+  .icon-with_subheading img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pattern-img {
+    display: none;
+  }
+
+  .case-icons-container {
+    display: none;
+  }
+
+  .text-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #empathy-map {
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  #process-infographic {
+    width: 100%;
+  }
+
+  #resume-home-img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 370px;
+    width: 100%;
+  }
+
+  .gallery_image-container_1,
+  .gallery_image-container_2,
+  .gallery_image-container_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 370px;
+    gap: 20px;
+  }
+
+  .gallery-card {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .gallery-card .thumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-card h4,
+  .gallery-card p {
+    text-align: left;
+  }
+
+  .gallery-heading {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .gallery-paragraph {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  #main_interface,
+  #dashboard,
+  #generated_documents,
+  #installer,
+  #app_icons,
+  #global_styling,
+  #marketing_brand {
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    padding-inline: 10px;
+    padding-block: 10px;
+  }
+
+  #chart {
+    width: 320px;
+    height: 310px;
+  }
+
+  #marketing-paragraph {
+    padding-bottom: 0;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .microcopy {
+    display: none;
+  }
+
+  .footer-copy {
+    max-width: 200px;
+    line-height: 1.4;
+  }
+
+  /* -------------------------------- */
+  /* PROF-DEV-CERTS (max-width: 480px) */
+  .content-section h2 {
+    text-align: left;
+  }
+
+  .prof-dev-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .prof-dev-note_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .prof-dev-grid li {
+    margin-left: 20px;
+  }
+
+  /* -------------- */
+  .cert-carousel_btn {
+    display: none;
+  }
+
+  .cert-carousel_wrap {
+    position: relative;
+    display: block;
+    padding: 18px 16px 44px;
+  }
+
+  .cert-carousel_viewport {
+    overflow: hidden;
+  }
+
+  /* horizontal track scroll */
+  .cert-carousel_track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 12px;
+  }
+
+  .certificate {
+    min-width: 0;
+  }
+
+  .certificate img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Dots */
+  .cert-carousel_dots {
+    bottom: 222px;
+  }
+
+  .certificate h3 {
+    margin: 14px 0 6px;
+    font-size: 18px;
+    color: #1a2e4f;
+    padding-left: 0;
+  }
+
+  .certificate p {
+    margin: 0;
+    color: #474647;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  /* Arrows */
+  .cert-carousel_btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    border: 1px solid rgba(26, 46, 79, 0.18);
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+  }
+
+  .cert-carousel_btn--next:hover {
+    transform: translateX(2px);
+  }
+
+  .cert-carousel_btn--prev:hover {
+    transform: translateX(-2px);
+  }
+
+  .cert-carousel_btn:focus-visible {
+    outline: 3px solid rgba(169, 134, 56, 0.45);
+    outline-offset: 3px;
+  }
+
+  /* CONTACT (max-width: 480px) */
+  .contact-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cert-carousel_track {
+    padding-bottom: 0;
+  }
+
+  /* Dots */
+  .cert-carousel_dots {
+    bottom: 150px;
+  }
+}
+
+/* ------------------------------------------- */
+/* INDEX SCREEN */
+/* Mobile */
+@media (max-width: 412px) {
+  /* PROJECTS SCREEN */
+  .project-background {
+    display: flex;
+    width: 100%;
+    max-width: 355px;
+    height: auto;
+  }
+
+  /* Dots */
+  .cert-carousel_dots {
+    bottom: 225px;
+  }
+}
+
+/* ------------------------------------------- */
+/* INDEX SCREEN */
+/* Mobile */
+@media (max-width: 390px) {
+  /* PROJECTS SCREEN */
+  .project-background {
+    display: flex;
+    width: 100%;
+    max-width: 334px;
+    height: auto;
   }
 }
 
