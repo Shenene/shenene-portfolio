@@ -2348,10 +2348,6 @@ h3 {
 
   /* -------------------------------- */
   /* PROJECTS RESUME (min-width: 1024px) */
-  .pattern-img {
-    display: none;
-  }
-
   .case-icons {
     gap: 4px;
   }
@@ -2383,7 +2379,7 @@ h3 {
     padding-block: 10px;
   }
 
-  /* PROF-DEV-CERTS (max-width: 1024px) */
+  /* PROF-DEV-CERTS (min-width: 1024px) */
   .cert-carousel_track {
     padding-bottom: 0;
   }
@@ -2391,6 +2387,12 @@ h3 {
   /* Dots */
   .cert-carousel_dots {
     bottom: 25%;
+  }
+}
+
+@media (max-width: 1279px) {
+  .pattern-img {
+    display: none;
   }
 }
 
@@ -2440,7 +2442,7 @@ h3 {
     padding-inline: 100px;
   }
 
-  /* PROF-DEV-CERTS (max-width: 1280px) */
+  /* PROF-DEV-CERTS (min-width: 1280px) */
   /* Dots */
   .cert-carousel_dots {
     bottom: 27%;
