@@ -12,7 +12,16 @@
 html,
 body {
   height: 100%;
-  font-family: "Inter", "Lato", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    "Inter",
+    "Lato",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
   background-color: #f4f2ed;
   color: #474647;
   line-height: 1.6;
@@ -171,15 +180,21 @@ nav a[aria-current="page"] {
   margin-bottom: 20px;
   text-align: center;
   color: #ffffff;
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.17), 2px 2px 4px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:
+    3px 4px 6px rgba(0, 0, 0, 0.17),
+    2px 2px 4px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.22), 3px 3px 5px rgba(0, 0, 0, 0.18);
+  box-shadow:
+    4px 6px 8px rgba(0, 0, 0, 0.22),
+    3px 3px 5px rgba(0, 0, 0, 0.18);
   color: #ffffff;
   background-color: #c2a45c;
   cursor: pointer;
@@ -441,7 +456,9 @@ h3 {
   align-items: flex-end;
   position: relative;
   /* box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08); */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 /* _________________________________________ */
@@ -712,7 +729,9 @@ h3 {
   padding: 14px;
   cursor: pointer;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .thumb:hover,
@@ -956,7 +975,10 @@ h3 {
   scroll-snap-align: start;
   background: #ffffff;
   border: 2px solid rgba(26, 46, 79, 0.15);
-  transition: tranform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    tranform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
@@ -1042,6 +1064,10 @@ h3 {
 
 .cert-carousel_dot[aria-current="true"] {
   background: rgba(26, 46, 79, 0.8);
+}
+
+.swipe-hint {
+  display: none;
 }
 
 /* --------------------------------------- */
@@ -1466,7 +1492,7 @@ h3 {
 
   /* Dots */
   .cert-carousel_dots {
-    bottom: 21%;
+    display: none;
   }
 }
 
@@ -1932,8 +1958,17 @@ h3 {
 
   /* -------------- */
   /* carousel */
+  /* Arrows */
   .cert-carousel_btn {
     display: none;
+  }
+
+  .swipe-hint {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: 0.9rem;
   }
 
   .cert-carousel_wrap {
@@ -1965,11 +2000,6 @@ h3 {
     display: block;
   }
 
-  /* Dots */
-  .cert-carousel_dots {
-    bottom: 12%;
-  }
-
   .certificate h3 {
     margin: 14px 0 6px;
     font-size: 18px;
@@ -1982,21 +2012,6 @@ h3 {
     color: #474647;
     font-size: 14px;
     font-style: italic;
-  }
-
-  /* Arrows */
-  .cert-carousel_btn {
-    width: 48px;
-    height: 48px;
-    border-radius: 999px;
-    border: 1px solid rgba(26, 46, 79, 0.18);
-    background: #ffffff;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
-    cursor: pointer;
-    font-size: 28px;
-    line-height: 1;
-    display: grid;
-    place-items: center;
   }
 
   .cert-carousel_btn--next:hover {
@@ -2021,7 +2036,7 @@ h3 {
   }
 
   /* -------------------------------- */
-  /* CONTACT (max-width: 480px) */
+  /* CONTACT - SUCCESS (max-width: 480px) */
   .success-nextline {
     display: block;
     margin-top: 5px;
@@ -2039,12 +2054,6 @@ h3 {
     max-width: 355px;
     height: auto;
   }
-
-  /* PROF-DEV-CERTS (max-width: 412px) */
-  /* Dots */
-  .cert-carousel_dots {
-    bottom: 18%;
-  }
 }
 
 /* ------------------------------------------- */
@@ -2057,12 +2066,6 @@ h3 {
     width: 100%;
     max-width: 334px;
     height: auto;
-  }
-
-  /* PROF-DEV-CERTS (max-width: 412px) */
-  /* Dots */
-  .cert-carousel_dots {
-    bottom: 17%;
   }
 }
 
@@ -2118,11 +2121,6 @@ h3 {
   /* PROF-DEV-CERTS (max-width: 375px) */
   .content-section h2 {
     text-align: left;
-  }
-
-  /* Dots */
-  .cert-carousel_dots {
-    bottom: 18%;
   }
 }
 
