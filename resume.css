@@ -540,6 +540,13 @@ h4 {
     align-items: flex-start;
   }
 
+  .contact-row_1,
+  .contact-row_2 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
   /* education */
   .v-divider.v-divider_education,
   .v-divider.v-divider_int-ref {
