@@ -36,13 +36,16 @@ body {
 /* ___________________________________________________ */
 /* GLOBAL STYLING */
 
-a {
+a,
+.btn {
   color: #474647;
   text-decoration: none;
   cursor: pointer;
+  border: none;
 }
 
-a:hover {
+a:hover,
+.btn:hover {
   color: #b39348;
   transition: color 0.2s ease;
 }
@@ -413,21 +416,36 @@ h4 {
 /* ------------------------------------------ */
 /* Media Queries */
 @media print {
-  @page {
-    size: A4;
-    margin: 12mm;
-  }
-
   html,
   body {
-    background: #ffffff !important;
+    background: white !important;
+    size: A4;
   }
-  .resume-page {
-    background: #ffffff !important;
-    width: auto;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
+
+  @page {
+    size: A4;
+    padding: 5mm;
+    background: white !important;
+  }
+
+  .resume-page,
+  .resume-main {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    background: white !important;
+  }
+
+  /* section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  } */
+
+  .resume-actions {
+    display: none !important;
   }
 }
 
@@ -445,6 +463,7 @@ h4 {
   .resume-contact {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     max-width: 100%;
   }
 
@@ -579,5 +598,131 @@ h4 {
 
   .achievements-paragraph {
     text-align: left;
+  }
+}
+
+/* max-width 375px */
+@media (max-width: 375px) {
+  /* header */
+  .resume-name {
+    letter-spacing: 0;
+  }
+
+  .resume-title {
+    letter-spacing: 0;
+  }
+
+  .resume-header_content,
+  .resume-contact,
+  .resume-main {
+    padding: 15px;
+  }
+
+  /* education */
+  .education {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education li,
+  .position-3 li,
+  .position-2 li,
+  .position-1 li,
+  .project-3 li,
+  .project-2 li,
+  .project-1 li {
+    margin-left: 24px;
+  }
+
+  /* interests */
+  .interests-references_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .interests {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 64px;
+    margin: 0px;
+  }
+
+  .interests::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    top: 20;
+    right: 0;
+    bottom: 0px;
+    background-color: #b39348;
+    opacity: 0.85;
+  }
+
+  /* references */
+  .references {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 64px;
+  }
+
+  .icon-text_wrapper {
+    align-items: flex-start;
+  }
+}
+
+/* max-width 320px */
+@media (max-width: 320px) {
+  h4 {
+    letter-spacing: 0;
+  }
+
+  .education li,
+  .position-3 li,
+  .position-2 li,
+  .position-1 li,
+  .project-3 li,
+  .project-2 li,
+  .project-1 li {
+    margin-left: 22px;
+  }
+
+  /* header */
+  .resume-name {
+    font-size: 28px;
+  }
+
+  .resume-title {
+    font-size: 16px;
+  }
+
+  .resume-header_content,
+  .resume-contact,
+  .resume-main {
+    padding: 12px;
+  }
+
+  .contact-row_1,
+  .contact-row_2 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* work experience */
+  .achievements-paragraph li {
+    margin-left: 10px;
+  }
+
+  /* dividers */
+  .v-divider.v-divider_education,
+  .v-divider.v-divider_int-ref {
+    display: none;
   }
 }
