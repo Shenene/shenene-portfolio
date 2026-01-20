@@ -11,7 +11,16 @@
 html,
 body {
   height: 100%;
-  font-family: "Inter", "Lato", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    "Inter",
+    "Lato",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
   background-color: #f4f2ed;
   color: #474647;
   line-height: 1.6;
@@ -160,11 +169,12 @@ h4 {
 .contact-row_1,
 .contact-row_2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   text-align: left;
   width: 100%;
   max-width: 1200px;
-  gap: 80px;
+  gap: 0px;
 }
 
 .icon {
@@ -195,15 +205,21 @@ h4 {
   margin-bottom: 20px;
   text-align: center;
   color: #ffffff;
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.17), 2px 2px 4px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:
+    3px 4px 6px rgba(0, 0, 0, 0.17),
+    2px 2px 4px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.22), 3px 3px 5px rgba(0, 0, 0, 0.18);
+  box-shadow:
+    4px 6px 8px rgba(0, 0, 0, 0.22),
+    3px 3px 5px rgba(0, 0, 0, 0.18);
   color: #ffffff;
   background-color: #c2a45c;
   cursor: pointer;
