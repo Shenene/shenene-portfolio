@@ -93,7 +93,8 @@ a:hover,
 
 .section-divider_short {
   height: 1px;
-  width: 400px;
+  /* width: 400px; */
+  width: 100%;
   background-color: #b39348;
   margin: 2rem 0;
   opacity: 0.2;
@@ -464,7 +465,37 @@ h4 {
     display: none !important;
   }
 }
+/* -------------------------------------------- */
+/* max-width 1440px */
+@media (max-width: 1440px) {
+  /* skills */
+  .skills {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    gap: 24px;
+  }
 
+  .skills-container_left,
+  .skills-container_right {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .v-divider.v-divider_skills {
+    margin: 40px 30px 3px 30px;
+  }
+
+  .skills-container_right {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* -------------------------------------------- */
 /* max-width 1024px */
 @media (max-width: 1024px) {
   .contact-row_1,
@@ -472,6 +503,8 @@ h4 {
     gap: 50px;
   }
 }
+
+/* -------------------------------------------- */
 
 @media (min-width: 900px) and (max-width: 1100px) {
   .resume-contact {
@@ -498,7 +531,35 @@ h4 {
   #portfolio {
     padding-left: 12px;
   }
+
+  /* skills (min-width: 900px) and (max-width: 1100px)*/
+  .skills {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    gap: 24px;
+  }
+
+  .skills-container_left,
+  .skills-container_right {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .v-divider.v-divider_skills {
+    margin: 40px 30px 3px 30px;
+  }
+
+  .skills-container_right {
+    width: 100%;
+    max-width: 100%;
+  }
 }
+
+/* -------------------------------------------- */
 
 @media (min-width: 769px) and (max-width: 899px) {
   /* header */
@@ -524,7 +585,35 @@ h4 {
   .contact-row_2 {
     max-width: 50%;
   }
+
+  /* ---- skills (min-width: 769px) and (max-width: 899px) ---- */
+  .skills {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    gap: 24px;
+  }
+
+  .skills-container_left,
+  .skills-container_right {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .v-divider.v-divider_skills {
+    margin: 40px 30px 3px 30px;
+  }
+
+  .skills-container_right {
+    width: 100%;
+    max-width: 100%;
+  }
 }
+
+/* -------------------------------------------- */
 
 /* max-width 768px */
 @media (max-width: 768px) {
@@ -676,6 +765,21 @@ h4 {
     text-align: left;
   }
 }
+
+/* -------------------------------------------- */
+
+/* max-width 390px */
+@media (max-width: 390px) {
+  .resume-name {
+    letter-spacing: 0px;
+  }
+
+  .resume-title {
+    letter-spacing: 0px;
+  }
+}
+
+/* -------------------------------------------- */
 
 /* max-width 375px */
 @media (max-width: 375px) {
